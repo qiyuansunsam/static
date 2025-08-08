@@ -213,13 +213,26 @@ const Home = () => {
                   key={skill}
                   initial={{ scale: 0 }}
                   animate={inView ? { scale: 1 } : {}}
-                  transition={{ delay: 0.7 + index * 0.05, duration: 0.6, type: "tween" }}
+                  transition={{ 
+                    delay: 0.7 + index * 0.05, 
+                    duration: 0.6, 
+                    type: "tween",
+                    scale: { duration: 0.6 },
+                    default: { duration: 0 }
+                  }}
                   whileHover={{
                     y: -3,
                     backgroundColor: "rgba(192, 192, 192, 0.1)",
                     borderColor: "rgba(192, 192, 192, 0.6)",
                     color: "#ffffff",
                     transition: { duration: 0.1 }
+                  }}
+                  exit={{
+                    y: 0,
+                    backgroundColor: "transparent",
+                    borderColor: "rgba(192, 192, 192, 0.3)",
+                    color: "#e5e5e5",
+                    transition: { duration: 0 }
                   }}
                   whileTap={{ y: -1, scale: 0.98 }}
                   style={{
