@@ -130,32 +130,34 @@ const Home = () => {
               textAlign: 'center'
             }}>
               <div>
-                <h4 style={{ color: '#c0c0c0', marginBottom: '0.5rem' }}>IELTS Score</h4>
+                <h4 style={{ color: '#c0c0c0', marginBottom: '0.5rem' }}>Freelancing</h4>
                 <a 
-                  href="/pdfs/ielts.pdf"
+                  href="https://www.fiverr.com/qiyuansunsam/buying?source=avatar_menu_profile"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    fontSize: '2rem',
-                    fontWeight: '700',
-                    color: 'white',
+                    fontSize: '1.4rem',
+                    fontWeight: '600',
+                    color: '#1dbf73',
                     textDecoration: 'none',
                     cursor: 'pointer',
                     display: 'inline-block',
-                    padding: '0.2rem 0.5rem',
-                    borderRadius: '8px'
+                    padding: '0.5rem 1rem',
+                    borderRadius: '8px',
+                    border: '2px solid #1dbf73',
+                    background: 'transparent'
                   }}
                   onMouseEnter={(e) => {
-                    e.target.style.background = 'rgba(192, 192, 192, 0.1)'
-                    e.target.style.color = '#c0c0c0'
+                    e.target.style.background = '#1dbf73'
+                    e.target.style.color = 'white'
                   }}
                   onMouseLeave={(e) => {
                     e.target.style.background = 'transparent'
-                    e.target.style.color = 'white'
+                    e.target.style.color = '#1dbf73'
                   }}
-                  title="Click to download IELTS certificate"
+                  title="Visit my Fiverr freelancing profile"
                 >
-                  7.5
+                  Fiverr Profile
                 </a>
               </div>
               <div>
