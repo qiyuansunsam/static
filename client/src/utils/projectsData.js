@@ -168,7 +168,7 @@ export const projectsData = [
       "Professional presentation optimization",
       "Full-stack architecture with React and Node.js"
     ],
-    github: "https://github.com/qiyuansunsam/web",
+    github: "https://github.com/qiyuansunsam/static",
     live: "#"
   }
 ]
