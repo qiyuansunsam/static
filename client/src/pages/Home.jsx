@@ -206,8 +206,12 @@ const Home = () => {
                   key={skill}
                   initial={{ scale: 0 }}
                   animate={inView ? { scale: 1 } : {}}
-                  transition={{ delay: 0.7 + index * 0.05, type: "tween" }}
+                  transition={{ delay: 0.7 + index * 0.05, duration: 0.6, type: "tween" }}
                   whileHover={{ scale: 1.1, transition: { duration: 0 } }}
+                  variants={{
+                    hover: { scale: 1.1, transition: { duration: 0 } },
+                    tap: { scale: 1, transition: { duration: 0 } }
+                  }}
                   style={{
                     background: 'linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%)',
                     padding: '0.8rem 1.5rem',
