@@ -69,8 +69,8 @@ const Home = () => {
                 key={index}
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={inView ? { scale: 1, opacity: 1 } : {}}
-                transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
-                whileHover={{ scale: 1.02, y: -5, transition: { duration: 0 } }}
+                transition={{ delay: 0.3 + index * 0.1, duration: 0.6, type: "tween" }}
+                whileHover={{ scale: 1.1, transition: { duration: 0 } }}
                 style={{
                   background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)',
                   padding: '2rem',
@@ -206,7 +206,7 @@ const Home = () => {
                   key={skill}
                   initial={{ scale: 0 }}
                   animate={inView ? { scale: 1 } : {}}
-                  transition={{ delay: 0.7 + index * 0.05 }}
+                  transition={{ delay: 0.7 + index * 0.05, type: "tween" }}
                   whileHover={{ scale: 1.1, transition: { duration: 0 } }}
                   style={{
                     background: 'linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%)',
