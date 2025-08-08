@@ -70,7 +70,14 @@ const Home = () => {
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={inView ? { scale: 1, opacity: 1 } : {}}
                 transition={{ delay: 0.3 + index * 0.1, duration: 0.6, type: "tween" }}
-                whileHover={{ scale: 1.1, transition: { duration: 0 } }}
+                whileHover={{
+                  scale: 1.02,
+                  rotateY: 2,
+                  boxShadow: "0 25px 50px rgba(192, 192, 192, 0.15)",
+                  borderColor: "rgba(192, 192, 192, 0.4)",
+                  transition: { duration: 0.1 }
+                }}
+                whileTap={{ scale: 0.98 }}
                 style={{
                   background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)',
                   padding: '2rem',
@@ -207,11 +214,14 @@ const Home = () => {
                   initial={{ scale: 0 }}
                   animate={inView ? { scale: 1 } : {}}
                   transition={{ delay: 0.7 + index * 0.05, duration: 0.6, type: "tween" }}
-                  whileHover={{ scale: 1.1, transition: { duration: 0 } }}
-                  variants={{
-                    hover: { scale: 1.1, transition: { duration: 0 } },
-                    tap: { scale: 1, transition: { duration: 0 } }
+                  whileHover={{
+                    y: -3,
+                    backgroundColor: "rgba(192, 192, 192, 0.1)",
+                    borderColor: "rgba(192, 192, 192, 0.6)",
+                    color: "#ffffff",
+                    transition: { duration: 0.1 }
                   }}
+                  whileTap={{ y: -1, scale: 0.98 }}
                   style={{
                     background: 'linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%)',
                     padding: '0.8rem 1.5rem',
