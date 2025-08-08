@@ -138,22 +138,22 @@ const Home = () => {
                   style={{
                     fontSize: '1.4rem',
                     fontWeight: '600',
-                    color: '#1dbf73',
+                    color: '#c0c0c0',
                     textDecoration: 'none',
                     cursor: 'pointer',
                     display: 'inline-block',
                     padding: '0.5rem 1rem',
                     borderRadius: '8px',
-                    border: '2px solid #1dbf73',
+                    border: '2px solid #c0c0c0',
                     background: 'transparent'
                   }}
                   onMouseEnter={(e) => {
-                    e.target.style.background = '#1dbf73'
-                    e.target.style.color = 'white'
+                    e.target.style.background = '#c0c0c0'
+                    e.target.style.color = '#000'
                   }}
                   onMouseLeave={(e) => {
                     e.target.style.background = 'transparent'
-                    e.target.style.color = '#1dbf73'
+                    e.target.style.color = '#c0c0c0'
                   }}
                   title="Visit my Fiverr freelancing profile"
                 >
