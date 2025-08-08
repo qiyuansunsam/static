@@ -69,8 +69,8 @@ const Home = () => {
                 key={index}
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={inView ? { scale: 1, opacity: 1 } : {}}
-                transition={{ delay: 0.3 + index * 0.1, duration: 0.1 }}
-                whileHover={{ scale: 1.02, y: -5 }}
+                transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
+                whileHover={{ scale: 1.02, y: -5, transition: { duration: 0.05 } }}
                 style={{
                   background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)',
                   padding: '2rem',
@@ -129,7 +129,7 @@ const Home = () => {
                     color: 'white',
                     textDecoration: 'none',
                     cursor: 'pointer',
-                    transition: 'all 0.15s ease',
+                    transition: 'all 0.05s ease',
                     display: 'inline-block',
                     padding: '0.2rem 0.5rem',
                     borderRadius: '8px'
@@ -166,7 +166,7 @@ const Home = () => {
                     padding: '0.5rem 1rem',
                     borderRadius: '8px',
                     display: 'inline-block',
-                    transition: 'all 0.15s ease',
+                    transition: 'all 0.05s ease',
                     background: 'transparent'
                   }}
                   onMouseEnter={(e) => {
@@ -209,7 +209,7 @@ const Home = () => {
                   initial={{ scale: 0 }}
                   animate={inView ? { scale: 1 } : {}}
                   transition={{ delay: 0.7 + index * 0.05 }}
-                  whileHover={{ scale: 1.1, transition: { duration: 0.1 } }}
+                  whileHover={{ scale: 1.1, transition: { duration: 0.05 } }}
                   style={{
                     background: 'linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%)',
                     padding: '0.8rem 1.5rem',
