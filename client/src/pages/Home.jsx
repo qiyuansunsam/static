@@ -69,7 +69,12 @@ const Home = () => {
                 key={index}
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={inView ? { scale: 1, opacity: 1 } : {}}
-                transition={{ delay: 0.3 + index * 0.1, duration: 0.6, type: "tween" }}
+                transition={{ 
+                  delay: 0.3 + index * 0.1, 
+                  duration: 0.6, 
+                  type: "tween",
+                  default: { duration: 0.08 }
+                }}
                 whileHover={{
                   scale: 1.02,
                   rotateY: 2,
