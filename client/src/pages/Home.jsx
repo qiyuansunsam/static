@@ -218,7 +218,7 @@ const Home = () => {
                     duration: 0.6, 
                     type: "tween",
                     scale: { duration: 0.6 },
-                    default: { duration: 0 }
+                    default: { duration: 0.08 }
                   }}
                   whileHover={{
                     y: -3,
@@ -232,7 +232,7 @@ const Home = () => {
                     backgroundColor: "transparent",
                     borderColor: "rgba(192, 192, 192, 0.3)",
                     color: "#e5e5e5",
-                    transition: { duration: 0 }
+                    transition: { duration: 0.08 }
                   }}
                   whileTap={{ y: -1, scale: 0.98 }}
                   style={{
