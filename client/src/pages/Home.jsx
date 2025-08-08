@@ -136,15 +136,13 @@ const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    fontSize: '1.4rem',
-                    fontWeight: '600',
+                    fontSize: '1.2rem',
                     color: '#c0c0c0',
                     textDecoration: 'none',
-                    cursor: 'pointer',
-                    display: 'inline-block',
+                    border: '1px solid #c0c0c0',
                     padding: '0.5rem 1rem',
                     borderRadius: '8px',
-                    border: '2px solid #c0c0c0',
+                    display: 'inline-block',
                     background: 'transparent'
                   }}
                   onMouseEnter={(e) => {
