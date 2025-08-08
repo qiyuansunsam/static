@@ -69,7 +69,7 @@ const Hero = () => {
           variants={fadeIn}
         >
           <animated.a 
-            href="/pdfs/CV.pdf" 
+            href={`${import.meta.env.BASE_URL}pdfs/CV.pdf`} 
             className={styles.primaryButton}
             style={springProps}
             download
