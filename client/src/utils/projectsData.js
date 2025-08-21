@@ -151,6 +151,61 @@ export const projectsData = [
   },
   {
     id: 8,
+    title: "AWS Caption Generation System",
+    shortDescription: "Cloud-native image annotation application with AI-powered automation",
+    fullDescription: "A comprehensive cloud-native image annotation application developed using AWS services, Flask web framework, and AI-powered automation for sophisticated image processing and analysis. This project explores scalable cloud architectures to process user-uploaded images automatically, implementing a fully automated serverless backend that generates AI annotations using Google's Gemini API, thumbnail generation, and real-time image gallery management specifically designed for high-availability web applications.\n\nThe system utilizes AWS Lambda and SNS for event-driven processing, with extensive security configurations and multi-AZ deployment pipelines that handle real-time image uploads and processing workflows. Technical architecture includes Auto Scaling Groups with target tracking policies trained on CPU utilization metrics to dynamically scale EC2 instances, integrated with Application Load Balancer for comprehensive traffic distribution and health monitoring capabilities.\n\nThe application automatically processes images through serverless functions triggered by S3 upload events while maintaining strict security protocols through VPC isolation, private subnets, and IAM role-based access controls. Advanced features include real-time auto scaling from 1-3 instances based on demand, dynamic load balancing across multiple availability zones, and comprehensive monitoring with detailed CloudWatch metrics for performance analysis and scaling behavior tracking.\n\nThe project demonstrates expertise in cloud architecture design, serverless computing deployment, and automated scaling system implementation, providing practical tools for professional image processing applications and high-traffic web services in production environments.",
+    technologies: ["AWS EC2", "AWS Lambda", "AWS RDS", "AWS S3", "AWS SNS", "Flask", "Python", "Gemini API", "MySQL"],
+    images: [
+      `${import.meta.env.BASE_URL}images/projects/cloud/main.png`,
+      `${import.meta.env.BASE_URL}images/projects/cloud/activity.png`,
+      `${import.meta.env.BASE_URL}images/projects/cloud/cloudwatch_alarm.png`,
+      `${import.meta.env.BASE_URL}images/projects/cloud/image.png`,
+      `${import.meta.env.BASE_URL}images/projects/cloud/lambda.png`,
+      `${import.meta.env.BASE_URL}images/projects/cloud/targets.png`,
+      `${import.meta.env.BASE_URL}images/projects/cloud/web.png`
+    ],
+    features: [
+      "Real-time image upload processing",
+      "AI-powered annotation generation",
+      "Automated thumbnail creation",
+      "Auto scaling and load balancing",
+      "Multi-AZ high availability deployment",
+      "Performance monitoring and metrics"
+    ],
+    github: "https://github.com/qiyuansunsam/Caption-Generation-AWS-",
+    live: "#",
+    downloadLink: `${import.meta.env.BASE_URL}pdfs/cloud.pdf`
+  },
+  {
+    id: 9,
+    title: "Certificate Generator System",
+    shortDescription: "A comprehensive web-based certificate generation platform built with modern PHP architecture",
+    fullDescription: "A comprehensive web-based certificate generation platform built with modern PHP architecture, utilizing DOMPDF for high-quality PDF rendering and SQLite for efficient data management. This production-ready application provides a complete solution for educational institutions, training organizations, and businesses requiring professional certificate issuance with verification capabilities.\n\nThe system implements a robust Model-View-Controller (MVC) architecture with clean separation of concerns, featuring dedicated controllers for request handling, models for data persistence, and services for specialized functionality. The certificate generation engine leverages DOMPDF's advanced HTML-to-PDF conversion capabilities with custom styling options, producing publication-quality certificates with professional typography and decorative elements.\n\nAdvanced Features & Capabilities include a Certificate Generation Engine with dynamic PDF generation using customizable A4 landscape templates, professional typography with serif fonts and elegant styling, decorative border frames with gold accent colors and seal elements, star rating system and achievement badges for visual appeal, automatic unique certificate number generation (CERT-XXX format), and HTML5-compliant template system with CSS3 styling support.\n\nThe Security & Validation Framework provides comprehensive input sanitization using htmlspecialchars with ENT_QUOTES, XSS protection through proper output encoding, SQL injection prevention using PDO prepared statements, date validation with PHP's strtotime() function, and certificate number uniqueness enforcement through database constraints.\n\nDatabase Architecture features SQLite database with optimized schema design, indexed certificate number field for fast verification lookups, automatic table creation and schema migration support, CRUD operations with pagination support for administrative functions, and timestamp tracking for audit trails and certificate issuance history.\n\nThe Verification System includes real-time certificate authentication via AJAX requests, JSON API endpoints for programmatic verification, certificate lookup by unique identifier with detailed information display, error handling for invalid or non-existent certificates, and responsive verification interface with Bootstrap 5 styling.\n\nThis enterprise-grade certificate generator provides educational institutions and training organizations with a reliable, scalable solution for digital credentialing, combining professional design aesthetics with robust technical architecture for secure, verifiable certificate issuance at scale.",
+    technologies: ["PHP", "DOMPDF", "SQLite", "Bootstrap 5", "JavaScript", "CSS3", "HTML5", "Docker", "Composer"],
+    images: [
+      `${import.meta.env.BASE_URL}images/projects/cert/main.png`,
+      `${import.meta.env.BASE_URL}images/projects/cert/cert.png`
+    ],
+    features: [
+      "Dynamic PDF certificate generation with custom templates",
+      "Professional typography and decorative styling",
+      "Unique certificate number generation and tracking",
+      "Real-time certificate verification system",
+      "Comprehensive security and input validation",
+      "Administrative dashboard for certificate management",
+      "Bootstrap 5 responsive interface",
+      "Docker containerization for deployment",
+      "SQLite database with optimized performance",
+      "AJAX-powered verification with JSON API",
+      "Audit logging and compliance tracking",
+      "Batch certificate processing capabilities"
+    ],
+    github: "https://github.com/qiyuansunsam/certgen.git",
+    live: "https://certgen-54ma.onrender.com/",
+    demo: `${import.meta.env.BASE_URL}demos/cert/video1526683811.mp4`
+  },
+  {
+    id: 10,
     title: "Personal Portfolio Website",
     shortDescription: "Full-stack responsive portfolio with modern UI/UX design",
     fullDescription: "A comprehensive full-stack responsive portfolio website developed from July 2025 to present, showcasing advanced web development skills through modern React, Node.js, and Express implementation with sophisticated Framer Motion animations and professional deployment on Render platform. This project demonstrates expertise in contemporary web technologies including JavaScript, HTML/CSS, and Git version control, with emphasis on creating an engaging professional presentation platform.\n\nTechnical architecture features a React-based frontend with dynamic component rendering, interactive project galleries incorporating video thumbnails and multi-image display systems, and a robust Node.js/Express backend handling contact form submissions with integrated email functionality. Advanced UI/UX design implementation includes smooth Framer Motion animations that enhance user experience, responsive design principles ensuring optimal viewing across all device types, and professional styling optimized for career presentation and client engagement.\n\nKey features include sophisticated project card systems with dynamic content loading, comprehensive PDF download functionality for project documentation and research papers, mobile-first responsive design ensuring accessibility across platforms, and integrated contact management with email automation.\n\nThe deployment process utilizes modern DevOps practices with Git-based version control and Render platform hosting for reliable performance and scalability. This project exemplifies full-stack development capabilities, modern web design principles, and professional presentation skills, serving as both a technical showcase and practical platform for career advancement and client acquisition.",
@@ -168,7 +223,7 @@ export const projectsData = [
       "Professional presentation optimization",
       "Full-stack architecture with React and Node.js"
     ],
-    github: "https://github.com/qiyuansunsam/static",
+    github: "https://github.com/qiyuansunsam/web",
     live: "#"
   }
 ]
