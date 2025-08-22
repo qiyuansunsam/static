@@ -106,11 +106,11 @@ const Experience = () => {
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: 'var(--primary-black)', color: 'var(--primary-white)' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '80px 20px' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '120px 20px 80px' }}>
         
 
         {/* Simplified Timeline */}
-        <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', minHeight: '800px' }}>
+        <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', minHeight: '1200px' }}>
           
           {/* Simple center line */}
           <div style={{ 
@@ -136,7 +136,8 @@ const Experience = () => {
               opacity: isLoaded ? 1 : 0,
               transform: isLoaded ? 'translateX(0)' : 'translateX(30px)',
               transition: 'all 0.8s ease-out',
-              transitionDelay: '0.2s'
+              transitionDelay: '0.2s',
+              zIndex: activeCard === 'exp-freelance' ? 30 : 2
             }}>
               {data.filter(d => d.id === 'exp-freelance').map((item) => (
                 <div
@@ -148,7 +149,8 @@ const Experience = () => {
                     backgroundColor: 'var(--primary-black)',
                     padding: '30px',
                     transition: 'all 0.3s ease',
-                    position: 'relative'
+                    position: 'relative',
+                    zIndex: activeCard === item.id ? 20 : 1
                   }}
                   onMouseEnter={(e) => {
                     e.target.style.borderColor = 'var(--metallic-dark)';
@@ -312,7 +314,8 @@ const Experience = () => {
               opacity: isLoaded ? 1 : 0,
               transform: isLoaded ? 'translateX(0)' : 'translateX(-30px)',
               transition: 'all 0.8s ease-out',
-              transitionDelay: '0.4s'
+              transitionDelay: '0.4s',
+              zIndex: activeCard === 'exp-yagao' ? 30 : 2
             }}>
               {data.filter(d => d.id === 'exp-yagao').map((item) => (
                 <div
@@ -324,7 +327,8 @@ const Experience = () => {
                     backgroundColor: 'var(--primary-black)',
                     padding: '30px',
                     transition: 'all 0.3s ease',
-                    position: 'relative'
+                    position: 'relative',
+                    zIndex: activeCard === item.id ? 20 : 1
                   }}
                   onMouseEnter={(e) => {
                     e.target.style.borderColor = 'var(--metallic-dark)';
@@ -514,7 +518,8 @@ const Experience = () => {
               opacity: isLoaded ? 1 : 0,
               transform: isLoaded ? 'translateX(0)' : 'translateX(30px)',
               transition: 'all 0.8s ease-out',
-              transitionDelay: '0.6s'
+              transitionDelay: '0.6s',
+              zIndex: activeCard === 'education-usyd' ? 30 : 2
             }}>
               {data.filter(d => d.id === 'education-usyd').map((item) => (
                 <div
@@ -526,7 +531,8 @@ const Experience = () => {
                     backgroundColor: 'var(--primary-black)',
                     padding: '30px',
                     transition: 'all 0.3s ease',
-                    position: 'relative'
+                    position: 'relative',
+                    zIndex: activeCard === item.id ? 20 : 1
                   }}
                   onMouseEnter={(e) => {
                     e.target.style.borderColor = 'var(--metallic-dark)';
