@@ -225,5 +225,30 @@ export const projectsData = [
     ],
     github: "https://github.com/qiyuansunsam/web",
     live: "#"
+  },
+  {
+    id: 11,
+    title: "Task-Based Hiring Platform (Hackathon Project)",
+    shortDescription: "AI-powered candidate assessment platform with video evaluation and automated recruitment workflows",
+    fullDescription: "A comprehensive task-based hiring platform developed using React, Flask, and advanced AI evaluation systems for sophisticated candidate assessment and automated recruitment workflows. This project explores innovative methodologies to evaluate coding submissions through video demonstrations, implementing a fully automated hiring bot that generates detailed feedback reports for technical skill assessment, code quality analysis, and performance ranking specifically designed for modern recruitment applications.\n\nThe system utilizes Claude AI and computer vision for intelligent evaluation implementation, with extensive video processing and frame extraction pipelines that handle real-time submission analysis. Technical architecture includes AI-powered comparison algorithms trained on coding demonstrations to identify technical competencies and rank candidates, integrated with OpenCV for comprehensive video frame analysis and automated screenshot evaluation capabilities.\n\nThe hiring bot automatically evaluates submissions based on AI model predictions while maintaining strict assessment protocols through statistical analysis of code quality metrics and technical implementation indicators. Advanced features include real-time portfolio generation, dynamic ranking based on performance metrics, and comprehensive evaluation reporting with detailed statistical breakdowns of technical skills and coding proficiency.\n\nThe project demonstrates expertise in AI-driven recruitment, machine learning model deployment, and automated assessment system architecture, providing practical tools for professional talent acquisition and technical hiring decision-making in competitive job markets.",
+    technologies: ["React.js", "Flask", "Python", "Claude AI API", "OpenCV", "SQLite", "Vite", "Tailwind CSS"],
+    images: [
+      `${import.meta.env.BASE_URL}images/projects/tbh/main.png`,
+      `${import.meta.env.BASE_URL}images/projects/tbh/Screenshot 2025-08-24 123819.png`,
+      `${import.meta.env.BASE_URL}images/projects/tbh/Screenshot 2025-08-24 123830.png`,
+      `${import.meta.env.BASE_URL}images/projects/tbh/Screenshot 2025-08-24 123857.png`,
+      `${import.meta.env.BASE_URL}images/projects/tbh/Screenshot 2025-08-24 123903.png`,
+      `${import.meta.env.BASE_URL}images/projects/tbh/Screenshot 2025-08-24 123916.png`
+    ],
+    features: [
+      "Real-time video submission processing",
+      "AI-powered candidate evaluation",
+      "Automated ranking and feedback generation",
+      "Portfolio building and performance tracking",
+      "Multi-criteria assessment and comparison",
+      "Comprehensive reporting and analytics"
+    ],
+    github: "https://github.com/qiyuansunsam/task-based-hiring",
+    live: "#"
   }
 ]
